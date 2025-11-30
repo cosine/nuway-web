@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Top-quality residential cleaning services in McHenry County, Lake County, and northern Cook and Kane Counties, IL. Trust Nu-Way for your home cleaning needs!">
     <meta name="keywords" content="residential cleaning, home cleaning, housekeeping, McHenry County IL, Lake County IL, Cook County IL, Kane County IL">
-    <title>Nu-Way Residential Cleaning - Cleaning Homes in McHenry, Lake, Northern Cook &amp; Kane Counties, IL</title>
+    <title>Residential Services - Nu-Way Cleaning Homes in McHenry, Lake, Northern Cook &amp; Kane Counties, IL</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,12 +14,28 @@
             color: #b0b0b0;
             margin: 0;
         }
+        h1 {
+            font-size: 4em;
+            color: white;
+            position: relative;
+            z-index: 1;
+            margin: 0;
+            text-align: center;
+            display: inline;
+        }
+        h2 {
+            margin: 0;
+            font-size: 3em;
+            font-weight: normal;
+            color: white;
+            font-family: "Times New Roman", Times, serif;
+        }
         .action {
             background-color: #ffb41e;
             color: black;
             cursor: pointer;
             display: inline-block;
-            margin: 20px;
+            margin: 20px auto 0 auto;
             padding: 12px 24px;
             border: none;
             border-radius: 8px;
@@ -29,6 +45,13 @@
         }
         .action.phone {
             display: none;
+        }
+        .other-actions {
+            margin: 0 auto 20px auto;
+        }
+        .other-actions a {
+            color: gray;
+            margin: 0 15px;
         }
         .header {
             background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('assets/background_cleaning.jpg');
@@ -40,25 +63,28 @@
             min-height: 250px;
             text-align: center;
         }
+        .h1-wrapper {
+            margin: 0 20px;
+        }
+        .h2-wrapper {
+            margin: 250px 20px 50px 20px;
+        }
         .logo {
             margin: 0 0 20px 20px;
             max-width: 200px;
             display: block;
 	    float: right;
         }
-        .subtitle {
-            margin-top: 250px;
-            margin-bottom: 50px;
-            font-size: 3em;
-            color: white;
-            font-family: "Times New Roman", Times, serif;
-        }
         .content {
-            margin: 20px;
+            margin: 20px auto;
+            max-width: 640px;
         }
         .nav {
             background-color: #228B22;
             padding: 10px 0;
+        }
+        .nav.phone {
+            display: none;
         }
         .nav a {
             color: white;
@@ -78,6 +104,11 @@
             padding: 10px 0;
             position: relative;
         }
+        .menu-title {
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+        }
         .menu-item .submenu {
             background-color: #228B22;
             border: 5px solid #072e66;
@@ -90,7 +121,7 @@
             left: 0;
             width: 200px;
         }
-        .menu-item:hover a:not([href]) {
+        .menu-item:hover .menu-title {
             background-color: #072e66;
         }
         .menu-item:hover .submenu {
@@ -116,15 +147,6 @@
         .footer a:visited {
             color: #404040;
         }
-        h1 {
-            font-size: 4em;
-            color: white;
-            position: relative;
-            z-index: 1;
-            margin: 0;
-            text-align: center;
-            display: inline;
-        }
         @media (max-width: 479px) {
             h1 {
                 font-size: 3.2em;
@@ -134,6 +156,17 @@
             }
             .action:not(.phone) {
                 display: none;
+            }
+            .nav.phone {
+                display: block;
+            }
+            .nav:not(.phone) {
+                display: none;
+            }
+        }
+        @media (max-width: 679px) {
+            .content {
+                margin: 20px;
             }
         }
         @media (max-width: 824px) {
@@ -161,28 +194,90 @@
 <body>
     <div class="header">
         <a href="."><img src="assets/nu-way_logo_1.png" alt="Nu-Way Logo" class="logo"></a>
-        <div style="width: 100%; display: block;"><h1>Nu&#8209;Way Residential Cleaning Services</h1></div>
-        <div class="subtitle">Clean&nbsp;spaces, happy&nbsp;places.</div>
+        <div class="h1-wrapper"><h1>Nu&#8209;Way Residential Cleaning Services</h1></div>
+        <div class="h2-wrapper"><h2>Home&nbsp;Sweet Clean&nbsp;Home</h2></div>
     </div>
     <div class="nav">
-        <a href="residential.html">Residential</a>
-        <a href="commercial.html">Commercial</a>
-        <a href=".">About Us</a>
+        <a href=".">Home</a>
+        <span class="menu-item">
+            <span class="menu-title">Residential</span>
+            <div class="submenu">
+                <a href="residential.html">Residential Cleaning</a>
+                <a href="kitchen.html">Kitchen Cleaning</a>
+                <a href="bathroom.html">Bathroom Scrubbing</a>
+                <a href="move-in.html">Move In Sanitation</a>
+                <a href="move-out.html">Move Out Cleaning</a>
+            </div>
+        </span>
+        <span class="menu-item">
+            <span class="menu-title">Commercial</span>
+            <div class="submenu">
+                <a href="commercial.html">Commercial Cleaning</a>
+                <a href="janitorial.html">Janitorial Services</a>
+                <a href="event-setup.html">Event Setup</a>
+                <a href="event-cleanup.html">Event Cleanup</a>
+                <a href="post-construction.html">Post Construction</a>
+            </div>
+        </span>
+        <a href="about-us.html">About Us</a>
     </div>
-    <a href="mailto:nuwaycleaninginc@gmail.com" class="action">Schedule an Appointment Today!</a>
-    <a href="tel:+18157155398" class="action phone">Schedule an Appointment Today!</a>
+    <div class="nav phone">
+        <span class="menu-item">
+            <span class="menu-title">Menu</span>
+            <div class="submenu">
+                <a href=".">Home</a>
+                <a href="about-us.html">About Us</a>
+            </div>
+        </span>
+        <span class="menu-item">
+            <span class="menu-title">Residential</span>
+            <div class="submenu">
+                <a href="residential.html">Residential Cleaning</a>
+                <a href="kitchen.html">Kitchen Cleaning</a>
+                <a href="bathroom.html">Bathroom Scrubbing</a>
+                <a href="move-in.html">Move In Sanitation</a>
+                <a href="move-out.html">Move Out Cleaning</a>
+            </div>
+        </span>
+        <span class="menu-item">
+            <span class="menu-title">Commercial</span>
+            <div class="submenu">
+                <a href="commercial.html">Commercial Cleaning</a>
+                <a href="janitorial.html">Janitorial Services</a>
+                <a href="event-setup.html">Event Setup</a>
+                <a href="event-cleanup.html">Event Cleanup</a>
+                <a href="post-construction.html">Post Construction</a>
+            </div>
+        </span>
+    </div>
+    <a href="mailto:nuwaycleaninginc@gmail.com?subject=Nu-Way%20Inquiry&body=Name%3A%0APhone%3A%0APlease%20tell%20us%20how%20we%20can%20help%20you%3A" class="action">Schedule an Appointment Today!</a>
+    <a href="sms:+18157155398?body=Name:%0ANu-Way%20Inquiry:" class="action phone">Schedule an Appointment Today!</a>
+    <div class="other-actions">
+        <a href="sms:+18157155398?body=Name:%0ANu-Way%20Inquiry:">Text Us</a>
+        <a href="tel:+18157155398">Call Us</a>
+        <a href="mailto:nuwaycleaninginc@gmail.com?subject=Nu-Way%20Inquiry&body=Name%3A%0APhone%3A%0APlease%20tell%20us%20how%20we%20can%20help%20you%3A">Email Us</a>
+    </div>
+    <h3>Residential Cleaning</h3>
     <div class="content">
-        <h2>Residential Cleaning</h2>
-<p>Nu&#8209;Way provides expert residential cleaning services tailored to your home needs.</p>
+<p>Nu-Way provides expert residential cleaning services tailored to your home needs.</p>
+<p>Homeowners delight in Nu-Way's residential expertise, turning chaotic spaces into organized retreats with meticulous attention to every corner.</p>
+<p>Loyal clients value our gentle, non-toxic cleaners that protect families and pets while eliminating dust and allergens.</p>
+<p>Experience the joy of walking into a freshly cleaned home, where our teams handle everything from floors to ceilings with care.</p>
+<p>Our recurring services keep homes consistently fresh, freeing up time for what matters most.</p>
 
     </div>
-    <a href="mailto:nuwaycleaninginc@gmail.com" class="action">Get a Free Quote Today!</a>
-    <a href="tel:+18157155398" class="action phone">Get a Free Quote Today!</a>
+    <a href="mailto:nuwaycleaninginc@gmail.com?subject=Nu-Way%20Inquiry&body=Name%3A%0APhone%3A%0APlease%20tell%20us%20how%20we%20can%20help%20you%3A" class="action">Get a Free Quote Today!</a>
+    <a href="sms:+18157155398?body=Name:%0ANu-Way%20Inquiry:" class="action phone">Get a Free Quote Today!</a>
+    <div class="other-actions">
+        <a href="sms:+18157155398?body=Name:%0ANu-Way%20Inquiry:">Text Us</a>
+        <a href="tel:+18157155398">Call Us</a>
+        <a href="mailto:nuwaycleaninginc@gmail.com?subject=Nu-Way%20Inquiry&body=Name%3A%0APhone%3A%0APlease%20tell%20us%20how%20we%20can%20help%20you%3A">Email Us</a>
+    </div>
     <div class="footer">
         <div class="copyright">Copyright © 2025 Nu&#8209;Way Cleaning &amp; Maintenance LLC - All Rights Reserved</div>
         <div class="contact">
-            <a href="mailto:nuwaycleaninginc@gmail.com">nuwaycleaninginc@gmail.com</a> |
-            <a href="tel:+18157155398">815-715-5398</a>
+            <a href="mailto:nuwaycleaninginc@gmail.com?subject=Nu-Way%20Inquiry&body=Name%3A%0APhone%3A%0APlease%20tell%20us%20how%20we%20can%20help%20you%3A">nuwaycleaninginc@gmail.com</a> |
+            <a href="sms:+18157155398?body=Name:%0ANu-Way%20Inquiry:">815-715-5398</a>
         </div>
     </div>
 </body>
